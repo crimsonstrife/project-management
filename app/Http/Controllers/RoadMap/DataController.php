@@ -77,7 +77,7 @@ class DataController extends Controller
             "pGroup" => 1,
             "pParent" => 0,
             "pOpen" => 1,
-            "pDepend" => $epic->parent_id ?? "",
+            "pDepend" => isset($epic->parent_id) ? $epic->parent_id : "",
             "pCaption" => "",
             "pNotes" => "",
             "pBarText" => "",
